@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Twitch Stat Buddy</title>
     <link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Oswald|PT+Sans+Narrow" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <div id=headerContainer> 
-                <div class='text'>Twitch Buddy</div>
+        <div id='headerContainer' class='headerContainer'>
+            <div class='text'>Twitch Buddy</div>
         </div>
-        <div id="livePlayersContainer">
-                <div id="livePlayers"></div>
+        <div class='secondHeader hide'></div>
+        <div class='containerVid hide'></div>
+        <div id="livePlayersContainer" class='livePlayersContainerFirstPage'>
+            <div id="livePlayers" class='livePlayersFirstPage'></div>
         </div>
-        <div id='footerContainer'>
+        <div id='footerContainer' class='footerContainer'>
             <div class='pic'> <img src="images/fortniteLogo.png"> </div>
             <div class='pic'> <img src="images/Dota2Logo.png"> </div>
             <div class='pic'> <img src="images/twitch.png"> </div>
@@ -27,4 +32,5 @@
         </div>
     </div>
 </body>
+
 </html>
