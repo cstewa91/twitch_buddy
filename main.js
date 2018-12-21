@@ -307,6 +307,7 @@ function displayVideo(twitchName) {
     $('#stats').remove();
     $('.homeButton').remove();
     $('.loader').remove();
+    $('.headerTextSecondPage').remove();
     $('#livePlayersContainer').removeClass('livePlayersContainerFirstPage').addClass('livePlayersContainerSecondPage');
     $('#livePlayers').removeClass('livePlayersFirstPage').addClass('livePlayersSecondPage');
     $('.playerCard').removeClass('playerCard').addClass('playerCard2');
