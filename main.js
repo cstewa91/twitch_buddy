@@ -50,7 +50,6 @@ var codPlayers = {
     Rallied: 'RalDaddy',
     Octane: 'Octane623',
     K1LLa93: 'AdamKIIIa',
-    Xposed: 'Xposet',
     Blazt: 'lBlaztR',
     Dashy: 'Dashy-SZN',
     aBeZy: 'aBeZy-',
@@ -58,6 +57,7 @@ var codPlayers = {
     Shooter: 'Shooter',
     DrDisrespect: 'DrDisrespect',
     Pootie33: 'Pootie33',
+    ThatChickParker: 'ThatChickParker'
 }
 var gameDataBf;
 var gameDataCod;
@@ -71,8 +71,20 @@ function init() {
     $("#headerContainer").click(displayHome)
     createAllPlayersArray(dotaPlayers, bfPlayers, fortniteTopPlayers, codPlayers);
     getOnlinePlayers();
+    $(".up").click(scrollUp)
+    $(".down").click(scrollDown)
 }
 
+function scrollDown(){
+    var elmnt = document.getElementById("livePlayers");
+    var h = elmnt.clientHeight
+    $('#livePlayers').animate({ scrollTop: "+="+h }, "1000");
+}
+function scrollUp(){
+    var elmnt = document.getElementById("livePlayers");
+    var h = elmnt.clientHeight
+    $('#livePlayers').animate({ scrollTop: "-="+h }, "1000");
+}
 
 function createAllPlayersArray(firstObject, secondObject, thirdObject, fourthObject){
     arrayOfPlayers=[]
