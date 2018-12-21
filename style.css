@@ -358,7 +358,7 @@ img {
         flex-wrap: wrap;
         justify-content: center;
     }
-    #footerContainer {
+    .footerContainer {
         display: none;
     }
     .text {

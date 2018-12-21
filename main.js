@@ -314,9 +314,13 @@ function renderLivePlayersOnDom() {
     }
 }
 
-function displayVideo(twitchName) {
+
+function displayVideo(twitchName) { 
+    createAllPlayersArray(dotaPlayers, bfPlayers, fortniteTopPlayers, codPlayers);
+    getOnlinePlayers()
+    $('.playerCard2').remove();
     $('iframe').remove();
-    $('#stats').remove();
+    $('.containerVid').empty();
     $('.homeButton').remove();
     $('.loader').remove();
     $('.headerTextSecondPage').remove();
@@ -329,6 +333,7 @@ function displayVideo(twitchName) {
     $('.secondHeader').removeClass('hide');
     $('#footerContainer').addClass('hide');
     $('#headerContainer').addClass('hide');
+
     let homeButton = $('<i>', {
         class: 'homeButton fas fa-angle-left',
         appendTo: '.secondHeader',
@@ -354,7 +359,8 @@ function displayVideo(twitchName) {
             'width': "1280",
             'frameborder': "0",
             'scrolling': "no",
-            'allowfullscreen': "true"
+            'allowfullscreen': "true",
+            'background': "none"
             }),
         appendTo: $('.containerVid')
     })
