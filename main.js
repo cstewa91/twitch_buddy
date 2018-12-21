@@ -320,6 +320,7 @@ function displayVideo(twitchName) {
     $('.homeButton').remove();
     $('.loader').remove();
     $('.headerTextSecondPage').remove();
+    $('.arrow').addClass('hide');
     $('#livePlayersContainer').removeClass('livePlayersContainerFirstPage').addClass('livePlayersContainerSecondPage');
     $('#livePlayers').removeClass('livePlayersFirstPage').addClass('livePlayersSecondPage');
     $('.playerCard').removeClass('playerCard').addClass('playerCard2');
@@ -363,6 +364,7 @@ function displayHome() {
     $('iframe').remove();
     $('#stats').remove();
     $('#livePlayers').empty();
+    $('.arrow').removeClass('hide');
     $('#livePlayersContainer').removeClass('livePlayersContainerSecondPage').addClass('livePlayersContainerFirstPage');
     $('#livePlayers').removeClass('livePlayersSecondPage').addClass('livePlayersFirstPage');
     $('.playerCard').removeClass('playerCard2').addClass('playerCard');
