@@ -25,7 +25,9 @@ var bfPlayers = {
     Gen_Odyssey: 'Gen-Odyssey',
     th1r3een: 'l---th1r3een---I',
     julianjanganoo: 'JulianJanganoo',
-    fragurassTV: 'fragurassTV'
+    fragurassTV: 'fragurassTV',
+    SteelRhythm: 'SteelRhythm',
+    GodricLight: 'GodricLight',
 }
 var fortniteTopPlayers = {
     Ninja: 'Ninja',
@@ -42,6 +44,7 @@ var fortniteTopPlayers = {
     Fnatic_Ettnix: 'Twitch-Ettnix',
     trymacs: "twitch trymacs",
     drnkie: "drnkie",
+    FearItSelf: 'FearItSelf',
 }
 var codPlayers = {
     Rallied: 'RalDaddy',
@@ -52,6 +55,9 @@ var codPlayers = {
     Dashy: 'Dashy-SZN',
     aBeZy: 'aBeZy-',
     pamaj: "pamajino",
+    Shooter: 'Shooter',
+    DrDisrespect: 'DrDisrespect',
+    Pootie33: 'Pootie33',
 }
 var gameDataBf;
 var gameDataCod;
