@@ -33,6 +33,7 @@ body {
     height: 60%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .livePlayersContainerSecondPage {
@@ -45,13 +46,28 @@ body {
 .livePlayersFirstPage {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 90%;
     overflow-x: hidden;
     overflow-y: scroll;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.arrow {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.arrow > div {
+    width: 5%; 
+    display: flex;
+    justify-content: center;
+}
+
+.up > img, .down > img {
+    width: 50%;
 .livePlayersSecondPage {
     display: flex;
     width: 100%;
@@ -61,6 +77,7 @@ body {
     overflow-y: hidden;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .livePlayersFooterContainer {
@@ -384,6 +401,12 @@ img {
         height: 45%;
         width: 60%;
     }
+    .arrow {
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
 }
 
 /*Small Screen Sizes*/
@@ -415,6 +438,14 @@ img {
         height: 50%;
         width: 65%;
     }
+    .arrow > div {
+        width: 8%;
+        display: flex;
+        justify-content: center;
+    }
+    .up > img, .down > img {
+        width: 65%;
+    }
 }
 
 /* iPad Pro ----------- */
@@ -439,7 +470,6 @@ img {
         height: 55%;
         width: 40%;
     }
-
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
@@ -453,6 +483,14 @@ img {
         color: white;
         font-size: 6vmax;
     }
+    .arrow > div {
+        width: 8%;
+        display: flex;
+        justify-content: center;
+    }
+    .up > img, .down > img {
+        width: 65%;
+    }
 }
 
 /* iPhone X ----------- */
@@ -460,6 +498,12 @@ img {
     img {
         height: 60%;
         width: 35%;
+    }
+    .arrow {
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
     }
 }
 
