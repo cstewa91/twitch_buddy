@@ -305,42 +305,33 @@ function renderLivePlayersOnDom() {
 function displayVideo(twitchName) {
     $('iframe').remove();
     $('#stats').remove();
-    $('#footerContainer').remove();
-    $('#livePlayersContainer').remove();
-    $('#headerContainer').remove();
-    $('.livePlayersFooterContainer').remove();
-    $('.containerVid').remove();
-
-    let videoContainer = $('<div>', {
-        class: 'containerVid',
-        appendTo: '.container'
+    $('.homeButton').remove();
+    $('.loader').remove();
+    $('#livePlayersContainer').removeClass('livePlayersContainerFirstPage').addClass('livePlayersContainerSecondPage');
+    $('#livePlayers').removeClass('livePlayersFirstPage').addClass('livePlayersSecondPage');
+    $('.playerCard').removeClass('playerCard').addClass('playerCard2');
+    $('.nameCard').removeClass('nameCard').addClass('nameCard2');
+    $('.containerVid').removeClass('hide');
+    $('.secondHeader').removeClass('hide');
+    $('#footerContainer').addClass('hide');
+    $('#headerContainer').addClass('hide');
+    let homeButton = $('<i>', {
+        class: 'homeButton fas fa-angle-left',
+        appendTo: '.secondHeader',
+        click: displayHome
     })
-    let livePlayersContainer = $('<div>',  {
-        id: 'livePlayersContainer',
-        appendTo: '.container'
+    let headerLogo = $('<div>', {
+        class: 'headerTextSecondPage',
+        text: 'Twitch Buddy',
+        appendTo: '.secondHeader'
     })
-    let livePlayersBar = $('<div>', {
-        id: 'livePlayers',
-        appendTo: '#livePlayersContainer'
-    })
-    
     let loader = $('<div>', {
         class: 'loader',
         appendTo: '.containerVid'
     })
-
     setInterval(function(){
         loader.removeClass('loader')
     }, 3500)
-
-    renderLivePlayersOnDom();
-    livePlayersContainer.removeAttr('id').addClass('livePlayersFooterContainer')
-    livePlayersBar.removeAttr('id').addClass('livePlayersFooter')
-    $('.nameCard').removeClass('nameCard').addClass('nameCard2')
-
-
-
-    $('.playerCard').removeClass('playerCard').addClass('playerCard2')
     var createIframe = $('<iframe>', {
         addClass: 'currentVideo',
         attr: ({
@@ -353,26 +344,22 @@ function displayVideo(twitchName) {
             }),
         appendTo: $('.containerVid')
     })
-    // $('.loader').removeClass('loader')
 }
 
 function displayHome() {
-    console.log("clicked")
-    
-    $('#livePlayers').empty()
     $('iframe').remove();
     $('#stats').remove();
-    $('#footerContainer').remove()
-    $('#headerContainer').remove();
-    $('.containerVid').removeClass().addClass('container');
-    $('#livePlayers2').removeAttr().attr('id', 'livePlayersContainer')
+    $('#livePlayers').empty();
+    $('#livePlayersContainer').removeClass('livePlayersContainerSecondPage').addClass('livePlayersContainerFirstPage');
+    $('#livePlayers').removeClass('livePlayersSecondPage').addClass('livePlayersFirstPage');
+    $('.playerCard').removeClass('playerCard2').addClass('playerCard');
+    $('.nameCard').removeClass('nameCard2').addClass('nameCard');
+    $('.containerVid').addClass('hide');
+    $('.secondHeader').addClass('hide');
+    $('#footerContainer').removeClass('hide');
+    $('#headerContainer').removeClass('hide');
     createAllPlayersArray(dotaPlayers, bfPlayers, fortniteTopPlayers, codPlayers);
-    getOnlinePlayers();
-
-    // $('.playerCard2').removeClass('playerCard2').addClass('playerCard')
-    
-    
-    
+    getOnlinePlayers(); 
 }
 
 function displayStats(gameObj) {
