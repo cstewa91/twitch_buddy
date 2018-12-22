@@ -395,12 +395,9 @@ function displayVideo(twitchName) {
         addClass: 'currentVideo',
         attr: ({
             'src': `https://player.twitch.tv/?channel=${twitchName}&muted=true`,
-            'height': "720",
-            'width': "1280",
             'frameborder': "0",
             'scrolling': "no",
             'allowfullscreen': "true",
-            'background': "none"
         }),
         appendTo: $('.containerVid')
     })
