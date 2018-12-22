@@ -58,10 +58,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    cursor: pointer;
 }
 
 .arrow > div {
+    cursor: pointer;
     width: 5%; 
     display: flex;
     justify-content: center;
@@ -531,7 +531,7 @@ img {
     width: 1em;
     height: 1em;
     border-radius: 50%;
-    margin: 72px auto;
+    /* margin: 72px auto; */
     position: absolute;
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);

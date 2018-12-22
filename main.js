@@ -14,7 +14,7 @@ var dotaPlayers = {
     Gorgc: "56939869",
     Canceldota: "141690233",
     Timado: "97658618",
-    henry: "205743502"
+    henry: "205743502",
 }
 var bfPlayers = {
     twistydoesntmiss: 'TwistyDoesntMlSS',
@@ -57,7 +57,7 @@ var codPlayers = {
     Shooter: 'Shooter',
     DrDisrespect: 'DrDisrespect',
     Pootie33: 'Pootie33',
-    ThatChickParker: 'ThatChickParker'
+    ThatChickParker: 'ThatChickParker',
 }
 var firstPage = true;
 var gameDataBf;
