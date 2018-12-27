@@ -108,7 +108,7 @@ body {
 .playerCard {
     display: flex;
     cursor: pointer;
-    height: 49.5%;
+    height: 50%;
     width: 40%;
     background-size: cover;
     position: relative;
@@ -342,7 +342,7 @@ img {
 .headerTextSecondPage {
     font-family: twitch;
     color: white;
-    font-size: 2vmax;
+    font-size: 3.5vmax;
     width: 93%;
     text-align: center;
 }
@@ -403,6 +403,9 @@ img {
 
 /* Laptops/Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
+    .headerTextSecondPage {
+        font-size: 4vmax;
+    }
     img {
         height: 65%;
         width: 40%;
@@ -416,6 +419,9 @@ img {
 
 /* Tablets, Ipads, Portrait */
 @media (min-width: 768px) and (max-width: 1024px) {
+    .headerTextSecondPage {
+        font-size: 3.5vmax;
+    }
     img {
         height: 60%;
         width: 50%;
@@ -436,18 +442,35 @@ img {
         margin: 2px;
     }
 
+    /* #stats {
+        width: 100%;
+        height: 40%;
+    } */
+
+    .iframeContainer {
+        width: 70%;
+    }
+    #stats {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: space-around;
+        align-content: space-around;
+        width: 39%;
+        height: 100%;
+        flex-flow: wrap;
+    }
+   
     #stats {
         width: 100%;
         height: 40%;
-    }
-
-    .iframeContainer {
-        width: 63%;
     }
 }
 
 /* Low Res Tablets, Mobile Phones (Landscape) */
 @media (min-width: 481px) and (max-width: 767px) {
+    .headerTextSecondPage {
+        font-size: 3vmax;
+    }
     img {
         height: 45%;
         width: 60%;
@@ -485,6 +508,12 @@ img {
 
 /*Small Screen Sizes*/
 @media (max-width: 481px) {
+    .headerTextSecondPage {
+        font-size: 2.5vmax;
+    }
+    .livePlayersContainerSecondPage {
+        display: none;
+    }
     img {
         height: 35%;
         width: 60%;
@@ -518,6 +547,15 @@ img {
     .containerVid {
         justify-content: center;
     }
+    .livePlayersContainerSecondPage {
+        width: 100%;
+        height: 24%;
+        display: flex;
+        justify-content: center;
+    }
+    .arrow {
+        width: 0%;
+    }
 }
 
 
@@ -548,9 +586,11 @@ img {
     .down>img {
         width: 65%;
     }
-
     .iframeContainer {
-        width: 96%;
+        width: 97%;
+    }
+    .headerTextSecondPage {
+        font-size: 4.5vmax;
     }
 }
 
@@ -575,6 +615,13 @@ img {
     img {
         height: 55%;
         width: 40%;
+    }
+    #stats {
+        width: 0%;
+        display: none;
+    }
+    .iframeContainer {
+        width: 80%;
     }
 }
 
@@ -608,7 +655,6 @@ img {
         height: 60%;
         width: 35%;
     }
-
     .arrow {
         height: 15%;
         display: flex;
@@ -616,12 +662,25 @@ img {
         align-items: flex-end;
     }
 
-    #stats .secondHeader .livePlayersContainerSecondPage {
+    /* #stats .secondHeader .livePlayersContainerSecondPage {
         display: none;
+        
+    }  */
+    #stats {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: space-around;
+        align-content: space-around;
+        width: 39%;
+        height: 100%;
+        flex-flow: wrap;
     }
 
     .iframeContainer {
-        width: 100%;
+        width: 60%;
+    }
+    .arrow {
+        width: 0%;
     }
 }
 
@@ -635,6 +694,19 @@ img {
         font-family: twitch;
         color: white;
         font-size: 5vmax;
+    }
+    .livePlayersContainerSecondPage {
+        width: 100%;
+        height: 24%;
+        display: flex;
+        justify-content: center;
+    }
+    .arrow {
+        width: 0%;
+    }
+    #stats {
+        width: 100%;
+        height: 60%;
     }
 }
 
