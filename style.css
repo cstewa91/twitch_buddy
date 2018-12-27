@@ -444,8 +444,6 @@ img {
     .iframeContainer {
         width: 63%;
     }
-
-
 }
 
 /* Low Res Tablets, Mobile Phones (Landscape) */
@@ -549,6 +547,10 @@ img {
     .up>img,
     .down>img {
         width: 65%;
+    }
+
+    .iframeContainer {
+        width: 96%;
     }
 }
 
