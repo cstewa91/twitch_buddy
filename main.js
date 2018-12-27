@@ -69,7 +69,6 @@ var fortniteStatsObject = {};
 //All functions go down here:
 
 function init() {
-    $("#headerContainer").click(displayHome)
     createAllPlayersArray(dotaPlayers, bfPlayers, fortniteTopPlayers, codPlayers);
     getOnlinePlayers();
     $(".up").click(scrollUp)
@@ -391,17 +390,23 @@ function displayVideo(twitchName) {
     setInterval(function () {
         loader.removeClass('loader')
     }, 3500)
-    var createIframe = $('<iframe>', {
-        addClass: 'currentVideo',
+    let iframeContainer = $('<div>', {
+        addClass: 'embed-responsive embed-responsive-16by9 iframeContainer',
+        appendTo: '.containerVid'
+    })
+    let createIframe = $('<iframe>', {
+        addClass: 'currentVideo embed-responsive-item',
         attr: ({
             'src': `https://player.twitch.tv/?channel=${twitchName}&muted=true`,
             'frameborder': "0",
             'scrolling': "no",
             'allowfullscreen': "true",
         }),
-        appendTo: $('.containerVid')
+        appendTo: $('.iframeContainer')
     })
+    
 }
+
 
 function displayHome() {
     firstPage = true;
@@ -423,6 +428,7 @@ function displayHome() {
 
 function displayStats(gameObj) {
     var overallStatsDiv = $('<div>').attr('id', 'stats')
+    var statsModal = $('<div>').addClass('statsModal')
     for (var key in gameObj) {
         var statsCont = $('<div>').addClass('statCard');
         var statKey = $('<div>').addClass('statKey').text(key);
@@ -431,7 +437,8 @@ function displayStats(gameObj) {
         overallStatsDiv.append(statsCont);
     }
     $('.containerVid').append(overallStatsDiv)
-}
+} 
+
 
 function gameDataFetch(game, streamName) {
     switch (game) {
