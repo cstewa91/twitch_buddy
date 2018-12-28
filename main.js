@@ -69,6 +69,7 @@ var fortniteStatsObject = {};
 //All functions go down here:
 
 function init() {
+    $('#myModal').modal('show');
     createAllPlayersArray(dotaPlayers, bfPlayers, fortniteTopPlayers, codPlayers);
     getOnlinePlayers();
     $(".up").click(scrollUp)

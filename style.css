@@ -4,6 +4,10 @@ body {
     background-image: linear-gradient(to top right, rgb(0, 0, 0), #6441A4);
 }
 
+.modal-body > p {
+    font-size: 2vmin;
+}
+
 .main-container {
     display: flex;
     justify-content: center;
