@@ -567,7 +567,9 @@ img {
         width: 20px;
         height: 20px;
     }
-
+    .modal-body>p {
+        font-size: 3vmin;
+    }
     
 }
 
@@ -674,7 +676,9 @@ img {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-
+    .modal-title {
+        font-size: 5vmin;
+    }
     .text {
         font-family: twitch;
         color: white;
