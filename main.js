@@ -61,7 +61,6 @@ var codPlayers = {
     Pootie33: 'Pootie33',
     ThatChickParker: 'ThatChickParker', 
     Parasite: 'Parasite',
-    Priestahh: 'Priestahh',
     PIPOPING: 'PIPOPING'
 }
 var firstPage = true;
@@ -402,7 +401,7 @@ function displayVideo(twitchName) {
         appendTo: '.containerVid'
     })
     setInterval(function () {
-        loader.removeClass('loader')
+        loader.removeClass('loader').css('display', 'none')
     }, 3500)
     let iframeContainer = $('<div>', {
         addClass: 'embed-responsive embed-responsive-16by9 iframeContainer',
