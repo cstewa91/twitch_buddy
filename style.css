@@ -387,12 +387,18 @@ img {
     display: none;
 }
 
+.containerVid > div:nth-child(1) {
+    display: none;
+}
 
 /* Desktops */
 @media (min-width: 1281px) and (max-width: 1650px) {
     #stats {
         width: 40%;
         height: 80%;
+    }
+    .iframeContainer {
+        width: 56.75%;
     }
 }
 
@@ -517,11 +523,6 @@ img {
     .headerTextSecondPage {
         font-size: 2.5vmax;
     }
-
-    .livePlayersContainerSecondPage {
-        display: none;
-    }
-
     img {
         height: 50px;
     }
@@ -556,10 +557,7 @@ img {
     }
 
     .livePlayersContainerSecondPage {
-        width: 100%;
-        height: 24%;
-        display: flex;
-        justify-content: center;
+        display: none;
     }
 
     .up>img,
