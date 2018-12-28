@@ -61,7 +61,6 @@ body {
 }
 
 .arrow>div {
-    cursor: pointer;
     width: 5%;
     display: flex;
     justify-content: center;
@@ -69,7 +68,9 @@ body {
 
 .up>img,
 .down>img {
-    width: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
 }
 
 .livePlayersSecondPage {
@@ -95,7 +96,6 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    /* overflow-y: scroll; */
     overflow-y: hidden;
     flex-wrap: wrap;
     justify-content: center;
@@ -307,8 +307,9 @@ body {
 }
 
 img {
-    height: 60%;
-    width: 35%;
+    /* height: 60%;
+    width: 35%; */
+    height:100px;
 }
 
 @font-face {
@@ -362,37 +363,7 @@ img {
     display: none;
 }
 
-/*Small Screen Sizes*/
-/* @media (max-height: 414px) {
-    #livePlayers {
-        display: flex;
-        width: 89%;
-        height: 100%;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .footerContainer {
-        display: none;
-    }
-    .text {
-        font-family: twitch;
-        color: white;
-        font-size: 2.5vmax;
-    }
-    .playerCard {
-        display: flex;
-        cursor: pointer;
-        height: 100%;
-        width: 50%;
-        background-size: contain;
-        position: relative;
-        flex-shrink: 0;
-        overflow: hidden;
-        border: 1px groove white;
-    }
-} */
+
 /* Desktops */
 @media (min-width: 1281px) and (max-width: 1650px) {
     #stats {
@@ -406,25 +377,30 @@ img {
     .headerTextSecondPage {
         font-size: 4vmax;
     }
+
     img {
-        height: 65%;
-        width: 40%;
+        height: 75px;
     }
 
     #stats {
         width: 40%;
         height: 67.5%;
     }
+
+    .up>img, .down>img {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 /* Tablets, Ipads, Portrait */
 @media (min-width: 768px) and (max-width: 1024px) {
     .headerTextSecondPage {
-        font-size: 3.5vmax;
+        font-size: 3vmax;
     }
     img {
-        height: 60%;
-        width: 50%;
+        height: 70px;
+        width: 70px;
     }
 
     .containerVid {
@@ -441,12 +417,6 @@ img {
         width: 47%;
         margin: 2px;
     }
-
-    /* #stats {
-        width: 100%;
-        height: 40%;
-    } */
-
     .iframeContainer {
         width: 70%;
     }
@@ -459,10 +429,13 @@ img {
         height: 100%;
         flex-flow: wrap;
     }
-   
     #stats {
         width: 100%;
         height: 40%;
+    }
+    .up>img, .down>img {
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -472,8 +445,8 @@ img {
         font-size: 3vmax;
     }
     img {
-        height: 45%;
-        width: 60%;
+        width: 65px;
+        height: 65px;
     }
 
     .arrow {
@@ -504,6 +477,10 @@ img {
     .iframeContainer {
         width: 90%;
     }
+    .up>img, .down>img {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 /*Small Screen Sizes*/
@@ -515,8 +492,7 @@ img {
         display: none;
     }
     img {
-        height: 35%;
-        width: 60%;
+        height:50px;
     }
 
     .arrow {
@@ -553,8 +529,10 @@ img {
         display: flex;
         justify-content: center;
     }
-    .arrow {
-        width: 0%;
+    .up>img,
+    .down>img {
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -562,8 +540,7 @@ img {
 /* iPhone 6+, 7+, 8+ ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
     img {
-        height: 35%;
-        width: 65%;
+       
     }
 }
 
@@ -571,21 +548,17 @@ img {
 /* iPad ----------- */
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    img {
-        height: 50%;
-        width: 65%;
-    }
 
+    img {
+        height: 100px;
+        width: 100px;
+    }
     .arrow>div {
         width: 8%;
         display: flex;
         justify-content: center;
     }
 
-    .up>img,
-    .down>img {
-        width: 65%;
-    }
     .iframeContainer {
         width: 97%;
     }
@@ -596,25 +569,29 @@ img {
 
 /* iPad Pro ----------- */
 @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape) {
-    img {
+    /* img {
         height: 60%;
         width: 50%;
-    }
+    } */
 }
 
 /* iPhone 5 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
     img {
-        height: 65%;
-        width: 45%;
+        height: 50px;
+        width: 50px;
+    }
+    .up>img, .down>img {
+        width: 25px;
+        height: 25px;
     }
 }
 
 /* iPhone 4 ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
     img {
-        height: 55%;
-        width: 40%;
+        height: 50px;
+        width: 50px;
     }
     #stats {
         width: 0%;
@@ -626,10 +603,6 @@ img {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-    img {
-        height: 35%;
-        width: 60%;
-    }
 
     .text {
         font-family: twitch;
@@ -643,18 +616,10 @@ img {
         justify-content: center;
     }
 
-    .up>img,
-    .down>img {
-        width: 65%;
-    }
 }
 
 /* iPhone X ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
-    img {
-        height: 60%;
-        width: 35%;
-    }
     .arrow {
         height: 15%;
         display: flex;
@@ -679,9 +644,6 @@ img {
     .iframeContainer {
         width: 60%;
     }
-    .arrow {
-        width: 0%;
-    }
 }
 
 @media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
@@ -700,9 +662,6 @@ img {
         height: 24%;
         display: flex;
         justify-content: center;
-    }
-    .arrow {
-        width: 0%;
     }
     #stats {
         width: 100%;
