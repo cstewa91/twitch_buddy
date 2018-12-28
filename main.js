@@ -284,7 +284,8 @@ function renderLivePlayersOnDom() {
                         let streamName = onlinePlayerArray[i].displayName
                         displayVideo(streamName);
                         let gameName = onlinePlayerArray[i].game;
-                        gameDataFetch(gameName, streamName)
+                        gameDataFetch(gameName, streamName);
+                        $('.arrow').css('display', 'none');
                     }
                 },
                 appendTo: $("#livePlayers"),
@@ -410,6 +411,7 @@ function displayVideo(twitchName) {
 
 function displayHome() {
     firstPage = true;
+    $('.arrow').css('display', 'flex')
     $('.playerCard').remove();
     $('.playerCard2').remove();
     $('iframe').remove();
