@@ -72,6 +72,7 @@ function init() {
     $('#myModal').modal('show');
     createAllPlayersArray(dotaPlayers, bfPlayers, fortniteTopPlayers, codPlayers);
     getOnlinePlayers();
+    addTextToModal();
     $(".up").click(scrollUp)
     $(".down").click(scrollDown)
 }
@@ -85,6 +86,12 @@ function scrollUp() {
     var elmnt = document.getElementById("livePlayers");
     var h = elmnt.clientHeight
     $('#livePlayers').animate({ scrollTop: "-=" + h }, "1000");
+}
+
+function addTextToModal() {
+    $('.modalText').text(
+        'Here at Twtich Buddy we show in-game stats of streamers who play Fortnite, DOTA2, COD4, and Battlefield 1. Go ahead and click on your favorite streamer and laugh at how many times they have died. Enjoy!'
+    )
 }
 
 function createAllPlayersArray(firstObject, secondObject, thirdObject, fourthObject) {
@@ -406,7 +413,7 @@ function displayVideo(twitchName) {
         }),
         appendTo: $('.iframeContainer')
     })
-    
+
 }
 
 
@@ -440,7 +447,7 @@ function displayStats(gameObj) {
         overallStatsDiv.append(statsCont);
     }
     $('.containerVid').append(overallStatsDiv)
-} 
+}
 
 
 function gameDataFetch(game, streamName) {
