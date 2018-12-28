@@ -538,9 +538,7 @@ img {
 
 /* iPhone 6+, 7+, 8+ ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
-    img {
-       
-    }
+
 }
 
 
@@ -644,34 +642,6 @@ img {
 
 }
 
-/* iPhone X ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
-    .arrow {
-        height: 15%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
-
-    /* #stats .secondHeader .livePlayersContainerSecondPage {
-        display: none;
-        
-    }  */
-    #stats {
-        display: flex;
-        box-sizing: border-box;
-        justify-content: space-around;
-        align-content: space-around;
-        width: 39%;
-        height: 100%;
-        flex-flow: wrap;
-    }
-
-    .iframeContainer {
-        width: 60%;
-    }
-}
-
 @media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
     img {
         height: 35%;
@@ -708,6 +678,22 @@ img {
     }
     .iframeContainer {
         width: 100%;
+    }
+}
+
+/* Pixel 2 XL Landscape*/
+@media only screen and (min-device-width: 823px) and (max-device-height: 411px) and (orientation : landscape) {
+    .secondHeader {
+        display: none;
+    }
+    .livePlayersContainerSecondPage {
+        display: none;
+    }
+    #stats {
+        display: none;
+    }
+    .iframeContainer {
+        width: 88%;
     }
 }
 
@@ -756,6 +742,31 @@ img {
     }
     .iframeContainer {
         width: 100%;
+    }
+}
+
+/* iPhone X Landscape */
+@media only screen and (min-device-width: 812px) and (max-device-height: 375px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+    .secondHeader {
+        display: none;
+    }
+    .livePlayersContainerSecondPage {
+        display: none;
+    }
+    #stats {
+        display: none;
+    }
+    .iframeContainer {
+        width: 82%;
+    }
+    .arrow {
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .containerVid {
+        height: 100%;
     }
 }
 
