@@ -45,6 +45,8 @@ var fortniteTopPlayers = {
     trymacs: "twitch trymacs",
     drnkie: "drnkie",
     FearItSelf: 'FearItSelf',
+    TSM_Daequan: 'TSM_Daequan',
+    HighDistortion: 'HighDistortion',
 }
 var codPlayers = {
     Rallied: 'RalDaddy',
@@ -57,7 +59,9 @@ var codPlayers = {
     Shooter: 'Shooter',
     DrDisrespect: 'DrDisrespect',
     Pootie33: 'Pootie33',
-    ThatChickParker: 'ThatChickParker',
+    ThatChickParker: 'ThatChickParker', 
+    Parasite: 'Parasite',
+    PIPOPING: 'PIPOPING'
 }
 var firstPage = true;
 var gameDataBf;
@@ -397,7 +401,7 @@ function displayVideo(twitchName) {
         appendTo: '.containerVid'
     })
     setInterval(function () {
-        loader.removeClass('loader')
+        loader.removeClass('loader').css('display', 'none')
     }, 3500)
     let iframeContainer = $('<div>', {
         addClass: 'embed-responsive embed-responsive-16by9 iframeContainer',
