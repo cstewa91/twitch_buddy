@@ -774,6 +774,9 @@ img {
     .livePlayersFirstPage {
         height: 100%;
     }
+    .playerCard {
+        height: 212px;
+    }
 }
 /* iPhone X Landscape */
 @media only screen and (device-width: 812px) and (device-height: 375px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
@@ -806,7 +809,7 @@ img {
 }
 
 /* iPad Portrait ----------- */
-@media only screen and (device-width : 768px) and (device-width : 1024px) and (orientation : portrait) {
+@media only screen and (device-width : 768px) and (device-height : 1024px) and (orientation : portrait) {
 
     img {
         height: 100px;
@@ -826,28 +829,63 @@ img {
     .headerTextSecondPage {
         font-size: 4.5vmax;
     }
+
+    .livePlayersContainerFirstPage {
+        height: 90%;
+        width: 90%;
+    }
+
+    .livePlayersFirstPage {
+        height: 90%;
+    }
+
+    .playerCard {
+        height: 319px;
+        width: 345px;
+    }
 }
 
-/* iPad Portrait
-@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
-    .iframeContainer {
-        width: 57%;
-    }
-} */
 
 /* iPad Landscape */
 @media only screen and (device-width: 1024px) and (device-height: 768px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
     .iframeContainer {
         width: 57%;
     }
+    .livePlayersContainerFirstPage {
+        height: 90%;
+        width: 100%;
+    }
+
+    .livePlayersFirstPage {
+        height: 90%;
+    }
+    .playerCard {
+        height: 239px;
+        width: 445px;
+    }
+}
+
+/* iPad Pro Portrait----------- */
+@media only screen and (device-height : 1366px) and (device-width : 1024px) and (orientation : portrait) {
+    .livePlayersContainerFirstPage {
+        height: 90%;
+        width: 100%;
+    }
+
+    .livePlayersFirstPage {
+        height: 76%;
+    }
+    .playerCard {
+        height: 359px;
+        width: 487px;
+    }
 }
 
 /* iPad Pro Landscape----------- */
-@media only screen and (device-width : 1024px) and (device-width : 1366px) and (orientation : landscape) {
-    /* img {
-        height: 60%;
-        width: 50%;
-    } */
+@media only screen and (device-height : 1024px) and (device-width : 1366px) and (orientation : landscape) {
+    .playerCard {
+        height: 275px;
+    }
 }
 
 /* Pixel 2 Portrait*/
@@ -883,6 +921,9 @@ img {
 @media only screen and (device-width: 411px) and (device-height: 823px) and (orientation : portrait) {
     .livePlayersFirstPage {
         height: 100%;
+    }
+    .playerCard {
+        height: 214.5px;
     }
 }
 
