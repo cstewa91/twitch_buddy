@@ -61,7 +61,13 @@ var codPlayers = {
     Pootie33: 'Pootie33',
     ThatChickParker: 'ThatChickParker', 
     Parasite: 'Parasite',
-    PIPOPING: 'PIPOPING'
+    PIPOPING: 'PIPOPING',
+    KuavoKen: 'KuavoKenny',
+    SlasheRAL: 'sIasher707',
+    Ashtronova: 'Ashtronova',
+    MrShaeButter: 'MrShaeButter',
+    KaneQuake: 'KaneQuake',
+    
 }
 var firstPage = true;
 var gameDataBf;
