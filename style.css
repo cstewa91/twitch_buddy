@@ -70,7 +70,7 @@ body {
 .livePlayersFirstPage {
     display: flex;
     width: 100%;
-    height: 90%;
+    height: 89.5%;
     overflow-x: hidden;
     overflow-y: scroll;
     flex-wrap: wrap;
@@ -132,8 +132,8 @@ body {
 .playerCard {
     display: flex;
     cursor: pointer;
-    height: 254px;
-    width: 450px;
+    height: 50%;
+    width: 360px;
     background-size: cover;
     position: relative;
     flex-shrink: 0;
@@ -184,7 +184,7 @@ body {
     background-color: rgba(0, 0, 0, 0.555);
     transition: all .4s ease-out;
     display: flex;
-    font-size: 1.5vw;
+    font-size: 2.5vmin;
     flex-flow: column;
     align-items: center;
     justify-content: center;
@@ -387,7 +387,15 @@ img {
     display: none;
 }
 
-
+@media (min-width: 1800px) and (max-width: 2000px){
+    .livePlayersContainerFirstPage {
+        width: 60%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
 
 /* Desktops */
 @media (min-width: 1281px) and (max-width: 1650px) {
@@ -397,6 +405,17 @@ img {
     }
     .iframeContainer {
         width: 56.75%;
+    }
+    .playerCard {
+        display: flex;
+        cursor: pointer;
+        height: 50%;
+        width: 324px;
+        background-size: cover;
+        position: relative;
+        flex-shrink: 0;
+        overflow: hidden;
+        border: 1px groove white;
     }
 }
 
@@ -417,8 +436,35 @@ img {
 
     .up>img,
     .down>img {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
+    }
+    .livePlayersFirstPage {
+        display: flex;
+        width: 100%;
+        height: 89.5%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .livePlayersContainerFirstPage {
+        width: 85%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .playerCard {
+        display: flex;
+        cursor: pointer;
+        height: 50%;
+        width: 290px;
+        background-size: cover;
+        position: relative;
+        flex-shrink: 0;
+        overflow: hidden;
+        border: 1px groove white;
     }
 }
 
@@ -464,17 +510,32 @@ img {
 
     .up>img,
     .down>img {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
 
-    .livePlayersFirstPage {
+    /* .livePlayersFirstPage {
         height: 60%;
+    } */
+    .livePlayersFirstPage {
+        display: flex;
+        width: 100%;
+        height: 89.5%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .livePlayersContainerFirstPage {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 }
 
-/* Low Res Tablets, Mobile Phones (Landscape) */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 651px) and (max-width: 767px) {
     .headerTextSecondPage {
         font-size: 3vmax;
     }
@@ -499,7 +560,20 @@ img {
     }
 
     .livePlayersFirstPage {
-        height: 75%;
+        display: flex;
+        width: 100%;
+        height: 89.5%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .livePlayersContainerFirstPage {
+        width: 80%;
+        height: 67%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .statCard {
@@ -515,11 +589,107 @@ img {
     .iframeContainer {
         width: 90%;
     }
-
+    .arrow>div {
+        width: 8%;
+        display: flex;
+        justify-content: center;
+    }
     .up>img,
     .down>img {
         width: 30px;
         height: 30px;
+    }
+    .playerCard {
+        display: flex;
+        cursor: pointer;
+        /* height: 253px; */
+        width: 450px;
+        background-size: cover;
+        position: relative;
+        flex-shrink: 0;
+        overflow: hidden;
+        border: 1px groove white;
+    }
+}
+
+/* Low Res Tablets, Mobile Phones (Landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .headerTextSecondPage {
+        font-size: 3vmax;
+    }
+    img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .arrow {
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .containerVid {
+        height: 90%;
+    }
+
+    .livePlayersContainerSecondPage {
+        display: none;
+    }
+
+    .livePlayersFirstPage {
+        display: flex;
+        width: 100%;
+        height: 89.5%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .livePlayersContainerFirstPage {
+        width: 95%;
+        height: 67%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .statCard {
+        width: 47%;
+        margin: 2px;
+    }
+
+    #stats {
+        width: 100%;
+        height: 30%;
+    }
+
+    .iframeContainer {
+        width: 90%;
+    }
+    .arrow>div {
+        width: 8%;
+        display: flex;
+        justify-content: center;
+    }
+    .up>img,
+    .down>img {
+        width: 30px;
+        height: 30px;
+    }
+    .playerCard {
+        display: flex;
+        cursor: pointer;
+        /* height: 253px; */
+        width: 450px;
+        background-size: cover;
+        position: relative;
+        flex-shrink: 0;
+        overflow: hidden;
+        border: 1px groove white;
+    }
+    .nameCard {
+        font-size: 2vmin;
     }
 }
 
@@ -570,10 +740,35 @@ img {
         width: 20px;
         height: 20px;
     }
+    .arrow>div {
+        width: 9%;
+        display: flex;
+        justify-content: center;
+    }
     .modal-body>p {
         font-size: 3vmin;
     }
-    
+    .livePlayersContainerFirstPage {
+        width: 95%;
+        height: 67%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .playerCard {
+        display: flex;
+        cursor: pointer;
+        /* height: 253px; */
+        width: 95%;
+        background-size: cover;
+        position: relative;
+        flex-shrink: 0;
+        overflow: hidden;
+        border: 1px groove white;
+    }
+    .nameCard {
+        font-size: 2vmin;
+    }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
@@ -624,8 +819,31 @@ img {
 /* iPhone 4 Portrait----------- */
 @media only screen and (device-height : 480px) and (device-width : 320px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
     .livePlayersContainerFirstPage {
-        width: 91%;
-        height: 64.5%;
+        width: 92%;
+        height: 40%;
+    }
+    .playerCard {
+        display: flex;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        position: relative;
+        flex-shrink: 0;
+        overflow: hidden;
+        border: 1px groove white;
+    }
+    .text {
+        font-size: 5vmax;
+    }
+    .livePlayersFirstPage {
+        display: flex;
+        width: 100%;
+        height: 90%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -657,23 +875,101 @@ img {
     .livePlayersContainerSecondPage {
         display: none;
     }
+    
+    .nameCard {
+        font-size: 2vmin;
+    }
+    .livePlayersFirstPage {
+        display: flex;
+        width: 100%;
+        height: 89.5%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .livePlayersContainerFirstPage {
+        width: 80%;
+        height: 67%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .playerCard {
+        display: flex;
+        cursor: pointer;
+        /* height: 253px; */
+        width: 151px;
+        background-size: cover;
+        position: relative;
+        flex-shrink: 0;
+        overflow: hidden;
+        border: 1px groove white;
+    }
 }
+/* Samsung Galaxy S5 */
+@media screen and (device-width: 360px) and (device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+    .playerCard {
+        display: flex;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        position: relative;
+        flex-shrink: 0;
+        overflow: hidden;
+        border: 1px groove white;
+    }
+    .livePlayersFirstPage {
+        display: flex;
+        width: 100%;
+        height: 90%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 
 /* iPhone 5 Portrait */
 @media only screen and (device-height : 568px) and (device-width : 320px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
     .livePlayersContainerFirstPage {
-        width: 90%;
+        width: 92%;
+        height: 40%;
+    }
+    .playerCard {
+        display: flex;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        position: relative;
+        flex-shrink: 0;
+        overflow: hidden;
+        border: 1px groove white;
+    }
+    .text {
+        font-family: twitch;
+        color: white;
+        font-size: 4vmax;
     }
     .livePlayersFirstPage {
-        height: 72.33%;
+        display: flex;
+        width: 100%;
+        height: 90%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
 /* iPhone 5 Landscape----------- */
 @media only screen and (device-width: 568px) and (device-height: 320px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
     img {
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
     }
 
     .up>img,
@@ -705,17 +1001,64 @@ img {
     }
 
     .livePlayersFirstPage {
-        height: 54%;
+        display: flex;
+        width: 100%;
+        height: 89.5%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .livePlayersContainerFirstPage {
+        width: 80%;
+        height: 67%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .playerCard {
+        display: flex;
+        cursor: pointer;
+        width: 162px;
+        background-size: cover;
+        position: relative;
+        flex-shrink: 0;
+        overflow: hidden;
+        border: 1px groove white;
     }
 }
 
 /* iPhone 6/7/8 Portrait */
 @media only screen and (device-height : 667px) and (device-width : 375px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+  
     .livePlayersContainerFirstPage {
-        width: 90%;
+        width: 92%;
+        height: 40%;
+    }
+    .playerCard {
+        display: flex;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        position: relative;
+        flex-shrink: 0;
+        overflow: hidden;
+        border: 1px groove white;
+    }
+    .text {
+        font-family: twitch;
+        color: white;
+        font-size: 4vmax;
     }
     .livePlayersFirstPage {
-        height: 63.5%;
+        display: flex;
+        width: 100%;
+        height: 90%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -736,15 +1079,54 @@ img {
     .iframeContainer {
         width: 100%;
     }
+    img {
+        width: 50px;
+        height: 50px;
+    }
+    .playerCard {
+        display: flex;
+        cursor: pointer;
+        /* height: 253px; */
+        width: 258px;
+        background-size: cover;
+        position: relative;
+        flex-shrink: 0;
+        overflow: hidden;
+        border: 1px groove white;
+    }
+    
 }
 
 /* iPhone 6+, 7+, 8+ Portrait ----------- */
 @media only screen and (device-width: 414px) and (device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
     .livePlayersContainerFirstPage {
-        width: 90%;
+        width: 92%;
+        height: 40%;
+    }
+    .playerCard {
+        display: flex;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        position: relative;
+        flex-shrink: 0;
+        overflow: hidden;
+        border: 1px groove white;
+    }
+    .text {
+        font-family: twitch;
+        color: white;
+        font-size: 4vmax;
     }
     .livePlayersFirstPage {
-        height: 57.34%;
+        display: flex;
+        width: 100%;
+        height: 90%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -765,17 +1147,35 @@ img {
     .iframeContainer {
         width: 100%;
     }
+    .playerCard {
+        display: flex;
+        cursor: pointer;
+        /* height: 253px; */
+        width: 258px;
+        background-size: cover;
+        position: relative;
+        flex-shrink: 0;
+        overflow: hidden;
+        border: 1px groove white;
+    }
 }
 /* iPhone X Portrait */
 @media only screen and (device-width: 375px) and (device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
     .livePlayersContainerFirstPage {
         width: 90%;
+        height: 36%;
     }
     .livePlayersFirstPage {
         height: 100%;
     }
     .playerCard {
-        height: 212px;
+        height: 127px;
+        width: 270px;
+    }
+    .text {
+        font-family: twitch;
+        color: white;
+        font-size: 4vmax;
     }
 }
 /* iPhone X Landscape */
@@ -805,6 +1205,20 @@ img {
 
     .containerVid {
         height: 100%;
+    }
+    .playerCard {
+        display: flex;
+        cursor: pointer;
+        width: 271px;
+        background-size: cover;
+        position: relative;
+        flex-shrink: 0;
+        overflow: hidden;
+        border: 1px groove white;
+    }
+    img {
+        height: 60px;
+        width: 60px;
     }
 }
 
