@@ -20,7 +20,14 @@ var dotaPlayers = {
     monkeys_forever: "86811043",
     aliastar: "83347409",
     balla_: "86809886",
-    explosiv_fury: "78891550"
+    explosiv_fury: "78891550",
+    P4pita: "28070572",
+    lyricaldota: "193673646",
+    gunnardota2: "126238768",
+    flutterchan: "120593719",
+    michaeludall: "141971067",
+    DyMyFly: "396393012",
+    Reinessa: "107018903",
 }
 var bfPlayers = {
     twistydoesntmiss: 'TwistyDoesntMlSS',
