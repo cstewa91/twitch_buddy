@@ -15,6 +15,12 @@ var dotaPlayers = {
     Canceldota: "141690233",
     Timado: "97658618",
     henry: "205743502",
+    MerliniDota: "67760037",
+    ODPixel: "89511038",
+    monkeys_forever: "86811043",
+    aliastar: "83347409",
+    balla_: "86809886",
+    explosiv_fury: "78891550"
 }
 var bfPlayers = {
     twistydoesntmiss: 'TwistyDoesntMlSS',
