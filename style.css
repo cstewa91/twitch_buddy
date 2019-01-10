@@ -429,9 +429,13 @@ img {
         height: 75px;
     }
 
-    #stats {
+    /* #stats {
         width: 40%;
         height: 67.5%;
+    } */
+
+    .iframeContainer {
+        width: 57.75%;
     }
 
     .up>img,
