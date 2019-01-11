@@ -70,7 +70,6 @@ var codPlayers = {
     aBeZy: 'aBeZy-',
     pamaj: "pamajino",
     Shooter: 'Shooter',
-    DrDisrespect: 'DrDisrespect',
     Pootie33: 'Pootie33',
     ThatChickParker: 'ThatChickParker', 
     Parasite: 'Parasite',
@@ -345,6 +344,10 @@ function renderLivePlayersOnDom() {
                 })
             }
         } else {
+
+            if ( ($('.iframeContainer').find('.currentVideo').attr('src')).indexOf(onlinePlayerArray[i].displayName) > 1) {
+                continue
+            }
             let playerCard = $("<div>", {
                 addClass: "playerCard2",
                 css: ({ "background-image": "url(" + onlinePlayerArray[i].thumbnail + ")" }),
