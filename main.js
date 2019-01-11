@@ -70,7 +70,6 @@ var codPlayers = {
     aBeZy: 'aBeZy-',
     pamaj: "pamajino",
     Shooter: 'Shooter',
-    DrDisrespect: 'DrDisrespect',
     Pootie33: 'Pootie33',
     ThatChickParker: 'ThatChickParker', 
     Parasite: 'Parasite',
@@ -243,7 +242,6 @@ function getDotaPreviousGame(response) {
     else {
         gameDataDota["Previous Game"] = "Won"
     }
-    console.log(gameDataDota)
     displayStats(gameDataDota)
 }
 
@@ -395,6 +393,7 @@ function displayVideo(twitchName) {
     $('.homeButton').remove();
     $('.loader').remove();
     $('.headerTextSecondPage').remove();
+    $('#stats').remove();
     $('.containerVid').empty();
     $('.arrow').addClass('hide');
     $('#livePlayersContainer').removeClass('livePlayersContainerFirstPage').addClass('livePlayersContainerSecondPage');
@@ -446,7 +445,6 @@ function displayHome() {
     $('.playerCard').remove();
     $('.playerCard2').remove();
     $('iframe').remove();
-    $('#stats').remove();
     $('#livePlayers').empty();
     $('.arrow').removeClass('hide');
     $('#livePlayersContainer').removeClass('livePlayersContainerSecondPage').addClass('livePlayersContainerFirstPage');
@@ -460,6 +458,7 @@ function displayHome() {
 }
 
 function displayStats(gameObj) {
+    $('#stats').remove();
     var overallStatsDiv = $('<div>').attr('id', 'stats')
     var statsModal = $('<div>').addClass('statsModal')
     for (var key in gameObj) {
