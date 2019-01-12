@@ -111,7 +111,7 @@ function scrollUp() {
 
 function addTextToModal() {
     $('.modalText').text(
-        'Here at Twtich Buddy we show in-game stats of streamers who play Fortnite, DOTA2, COD4, and Battlefield 1. Go ahead and click on your favorite streamer and laugh at how many times they have died. Enjoy!'
+        'Here at Twitch Buddy we show in-game stats of streamers who play Fortnite, DOTA2, COD4, and Battlefield 1. Go ahead and click on your favorite streamer and laugh at how many times they have died. Enjoy!'
     )
 }
 
