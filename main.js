@@ -69,7 +69,7 @@ var codPlayers = {
     pamaj: "pamajino",
     Shooter: 'Shooter',
     Pootie33: 'Pootie33',
-    ThatChickParker: 'ThatChickParker', 
+    ThatChickParker: 'ThatChickParker',
     Parasite: 'Parasite',
     PIPOPING: 'PIPOPING',
     KuavoKen: 'KuavoKenny',
@@ -77,7 +77,7 @@ var codPlayers = {
     Ashtronova: 'Ashtronova',
     MrShaeButter: 'MrShaeButter',
     KaneQuake: 'KaneQuake',
-    
+
 }
 var firstPage = true;
 var gameDataBf;
@@ -100,12 +100,17 @@ function init() {
 function scrollDown() {
     var elmnt = document.getElementById("livePlayers");
     var h = elmnt.clientHeight
-    $('#livePlayers').animate({ scrollTop: "+=" + h }, "1000");
+    $('#livePlayers').animate({
+        scrollTop: "+=" + h
+    }, "1000");
 }
+
 function scrollUp() {
     var elmnt = document.getElementById("livePlayers");
     var h = elmnt.clientHeight
-    $('#livePlayers').animate({ scrollTop: "-=" + h }, "1000");
+    $('#livePlayers').animate({
+        scrollTop: "-=" + h
+    }, "1000");
 }
 
 function addTextToModal() {
@@ -236,8 +241,7 @@ function getDotaPreviousGame(response) {
     gameDataDota["Previous Assists"] = response[0].assists;
     if (response[0].radiant_win === false) {
         gameDataDota["Previous Game"] = "Lost"
-    }
-    else {
+    } else {
         gameDataDota["Previous Game"] = "Won"
     }
     displayStats(gameDataDota)
@@ -282,7 +286,7 @@ function getCodPlayers(player, name) {
         var gameLosses = stats.losses;
         var kdr = stats.kdRatio;
         var headshots = stats.headshots;
-        var accuracy = parseFloat(response.data.mp.weekly.all.accuracy * 100).toFixed(1) + "%"; 
+        var accuracy = parseFloat(response.data.mp.weekly.all.accuracy * 100).toFixed(1) + "%";
         if (accuracy === 'NaN%') {
             accuracy = "N/A"
         }
@@ -303,12 +307,16 @@ function getCodPlayers(player, name) {
 
 function renderLivePlayersOnDom() {
     recreateOnlinePlayerArrayToHaveOnlyOurGamePlayers();
-    onlinePlayerArray.sort(function (a, b) { return 0.5 - Math.random() });
+    onlinePlayerArray.sort(function (a, b) {
+        return 0.5 - Math.random()
+    });
     for (let i = 0; i < onlinePlayerArray.length; i++) {
         if (firstPage) {
             let playerCard = $("<div>", {
                 addClass: "playerCard",
-                css: ({ "background-image": "url(" + onlinePlayerArray[i].thumbnail + ")" }),
+                css: ({
+                    "background-image": "url(" + onlinePlayerArray[i].thumbnail + ")"
+                }),
                 on: {
                     click: function () {
                         let streamName = onlinePlayerArray[i].displayName
@@ -335,8 +343,7 @@ function renderLivePlayersOnDom() {
                     text: "Black Ops 4",
                     appendTo: nameCard
                 })
-            }
-            else {
+            } else {
                 let displayGame = $("<div>", {
                     addClass: "game",
                     text: onlinePlayerArray[i].game,
@@ -345,12 +352,14 @@ function renderLivePlayersOnDom() {
             }
         } else {
 
-            if ( ($('.iframeContainer').find('.currentVideo').attr('src')).indexOf(onlinePlayerArray[i].displayName) > 1) {
+            if (($('.iframeContainer').find('.currentVideo').attr('src')).indexOf(onlinePlayerArray[i].displayName) > 1) {
                 continue
             }
             let playerCard = $("<div>", {
                 addClass: "playerCard2",
-                css: ({ "background-image": "url(" + onlinePlayerArray[i].thumbnail + ")" }),
+                css: ({
+                    "background-image": "url(" + onlinePlayerArray[i].thumbnail + ")"
+                }),
                 on: {
                     click: function () {
                         let streamName = onlinePlayerArray[i].displayName
@@ -377,8 +386,7 @@ function renderLivePlayersOnDom() {
                     text: "Black Ops 4",
                     appendTo: nameCard
                 })
-            }
-            else {
+            } else {
                 let displayGame = $("<div>", {
                     addClass: "game",
                     text: onlinePlayerArray[i].game,
@@ -510,6 +518,3 @@ function gameDataFetch(game, streamName) {
             }
     }
 }
-
-
-
