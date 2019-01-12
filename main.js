@@ -54,7 +54,6 @@ var fortniteTopPlayers = {
     Svennoss: 'Svennoss',
     uwatakashi: 'Uwatakashi_',
     Fnatic_Ettnix: 'Twitch-Ettnix',
-    trymacs: "twitch trymacs",
     drnkie: "drnkie",
     FearItSelf: 'FearItSelf',
     TSM_Daequan: 'TSM_Daequan',
@@ -283,7 +282,10 @@ function getCodPlayers(player, name) {
         var gameLosses = stats.losses;
         var kdr = stats.kdRatio;
         var headshots = stats.headshots;
-        var accuracy = response.data.mp.weekly.all.accuracy;
+        var accuracy = parseFloat(response.data.mp.weekly.all.accuracy * 100).toFixed(1) + "%"; 
+        if (accuracy === 'NaN%') {
+            accuracy = "N/A"
+        }
         var killstreak = stats.longestKillstreak;
         gameDataCod = {
             'Player': name,
@@ -293,7 +295,7 @@ function getCodPlayers(player, name) {
             'Longest Killstreak': killstreak,
             'Average Score': parseInt(average),
             'Headshots': headshots,
-            'Accuracy': parseFloat(accuracy * 100).toFixed(1) + "%",
+            'Accuracy': accuracy,
         }
         displayStats(gameDataCod);
     });
