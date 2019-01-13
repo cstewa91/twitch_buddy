@@ -151,22 +151,17 @@ body {
     overflow: hidden;
 }
 
-.playerCard:hover .nameCard {
+
+.playerCard:hover>.nameCard {
+    top: 65%;
     opacity: 0.80;
     height: 35%;
 }
 
-.playerCard:hover>.nameCard {
-    top: 65%;
-}
-
-.playerCard2:hover .nameCard2 {
-    opacity: 0.80;
-    height: 100%;
-}
-
 .playerCard2:hover>.nameCard2 {
     top: 0%;
+    opacity: 0.80;
+    height: 100%;
 }
 
 .playerCard2>.nameCard2 {
@@ -880,6 +875,18 @@ img {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
 
 /* iPhone 4 Landscape----------- */
@@ -944,6 +951,18 @@ img {
         overflow: hidden;
         border: 1px groove white;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
 
 /* Samsung Galaxy S5 */
@@ -968,6 +987,18 @@ img {
         overflow-y: scroll;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -1005,6 +1036,18 @@ img {
         overflow-y: scroll;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -1071,6 +1114,18 @@ img {
         overflow: hidden;
         border: 1px groove white;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
 
 /* iPhone 6/7/8 Portrait */
@@ -1107,6 +1162,18 @@ img {
         overflow-y: scroll;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -1145,6 +1212,18 @@ img {
         border: 1px groove white;
     }
 
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
+
 }
 
 /* iPhone 6+, 7+, 8+ Portrait ----------- */
@@ -1181,6 +1260,18 @@ img {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
 
 /* iPhone 6+/7+/8+ Landscape */
@@ -1212,6 +1303,18 @@ img {
         overflow: hidden;
         border: 1px groove white;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
 
 /* iPhone X Portrait */
@@ -1234,6 +1337,18 @@ img {
         font-family: twitch;
         color: white;
         font-size: 4vmax;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -1281,6 +1396,18 @@ img {
         height: 60px;
         width: 60px;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
 
 /* iPad Portrait ----------- */
@@ -1318,6 +1445,18 @@ img {
         height: 319px;
         width: 345px;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
 
 
@@ -1340,6 +1479,18 @@ img {
         height: 239px;
         width: 445px;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
 
 /* iPad Pro Portrait----------- */
@@ -1357,12 +1508,36 @@ img {
         height: 359px;
         width: 487px;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
 
 /* iPad Pro Landscape----------- */
 @media only screen and (device-height : 1024px) and (device-width : 1366px) and (orientation : landscape) {
     .playerCard {
         height: 275px;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -1374,6 +1549,18 @@ img {
 
     .livePlayersFirstPage {
         height: 58%;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -1394,6 +1581,18 @@ img {
     .iframeContainer {
         width: 100%;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
 
 /* Pixel 2 XL Portrait*/
@@ -1404,6 +1603,18 @@ img {
 
     .playerCard {
         height: 214.5px;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -1424,6 +1635,18 @@ img {
     .iframeContainer {
         width: 88%;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
 
 /* Galaxy S5 Portrait */
@@ -1434,6 +1657,18 @@ img {
 
     .livePlayersFirstPage {
         height: 66%;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -1453,6 +1688,18 @@ img {
 
     .iframeContainer {
         width: 100%;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
