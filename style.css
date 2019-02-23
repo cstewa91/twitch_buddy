@@ -151,22 +151,17 @@ body {
     overflow: hidden;
 }
 
-.playerCard:hover .nameCard {
+
+.playerCard:hover>.nameCard {
+    top: 65%;
     opacity: 0.80;
     height: 35%;
 }
 
-.playerCard:hover>.nameCard {
-    top: 65%;
-}
-
-.playerCard2:hover .nameCard2 {
-    opacity: 0.80;
-    height: 100%;
-}
-
 .playerCard2:hover>.nameCard2 {
     top: 0%;
+    opacity: 0.80;
+    height: 100%;
 }
 
 .playerCard2>.nameCard2 {
@@ -388,7 +383,7 @@ img {
 }
 
 
-@media (min-width: 1800px) and (max-width: 2000px){
+@media (min-width: 1800px) and (max-width: 2000px) {
     .livePlayersContainerFirstPage {
         width: 60%;
         height: 60%;
@@ -408,9 +403,11 @@ img {
         width: 40%;
         height: 80%;
     }
+
     .iframeContainer {
         width: 56.75%;
     }
+
     .playerCard {
         display: flex;
         cursor: pointer;
@@ -448,6 +445,7 @@ img {
         width: 30px;
         height: 30px;
     }
+
     .livePlayersFirstPage {
         display: flex;
         width: 100%;
@@ -457,6 +455,7 @@ img {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .livePlayersContainerFirstPage {
         width: 85%;
         height: 60%;
@@ -464,6 +463,7 @@ img {
         justify-content: center;
         flex-direction: column;
     }
+
     .playerCard {
         display: flex;
         cursor: pointer;
@@ -495,7 +495,7 @@ img {
     }
 
     .livePlayersContainerSecondPage {
-        display:none;
+        display: none;
     }
 
     .statCard {
@@ -535,6 +535,7 @@ img {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .livePlayersContainerFirstPage {
         width: 100%;
         height: 60%;
@@ -548,6 +549,7 @@ img {
     .headerTextSecondPage {
         font-size: 3vmax;
     }
+
     img {
         width: 65px;
         height: 65px;
@@ -577,6 +579,7 @@ img {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .livePlayersContainerFirstPage {
         width: 80%;
         height: 67%;
@@ -598,16 +601,19 @@ img {
     .iframeContainer {
         width: 90%;
     }
+
     .arrow>div {
         width: 8%;
         display: flex;
         justify-content: center;
     }
+
     .up>img,
     .down>img {
         width: 30px;
         height: 30px;
     }
+
     .playerCard {
         display: flex;
         cursor: pointer;
@@ -626,6 +632,7 @@ img {
     .headerTextSecondPage {
         font-size: 3vmax;
     }
+
     img {
         width: 60px;
         height: 60px;
@@ -655,6 +662,7 @@ img {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .livePlayersContainerFirstPage {
         width: 95%;
         height: 67%;
@@ -676,16 +684,19 @@ img {
     .iframeContainer {
         width: 90%;
     }
+
     .arrow>div {
         width: 8%;
         display: flex;
         justify-content: center;
     }
+
     .up>img,
     .down>img {
         width: 30px;
         height: 30px;
     }
+
     .playerCard {
         display: flex;
         cursor: pointer;
@@ -697,6 +708,7 @@ img {
         overflow: hidden;
         border: 1px groove white;
     }
+
     .nameCard {
         font-size: 2vmin;
     }
@@ -707,6 +719,7 @@ img {
     .headerTextSecondPage {
         font-size: 2.5vmax;
     }
+
     img {
         height: 50px;
     }
@@ -749,14 +762,17 @@ img {
         width: 20px;
         height: 20px;
     }
+
     .arrow>div {
         width: 9%;
         display: flex;
         justify-content: center;
     }
+
     .modal-body>p {
         font-size: 3vmin;
     }
+
     .livePlayersContainerFirstPage {
         width: 95%;
         height: 67%;
@@ -764,6 +780,7 @@ img {
         justify-content: center;
         flex-direction: column;
     }
+
     .playerCard {
         display: flex;
         cursor: pointer;
@@ -775,6 +792,7 @@ img {
         overflow: hidden;
         border: 1px groove white;
     }
+
     .nameCard {
         font-size: 2vmin;
     }
@@ -831,6 +849,7 @@ img {
         width: 92%;
         height: 40%;
     }
+
     .playerCard {
         display: flex;
         cursor: pointer;
@@ -842,9 +861,11 @@ img {
         overflow: hidden;
         border: 1px groove white;
     }
+
     .text {
         font-size: 5vmax;
     }
+
     .livePlayersFirstPage {
         display: flex;
         width: 100%;
@@ -853,6 +874,18 @@ img {
         overflow-y: scroll;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -884,10 +917,11 @@ img {
     .livePlayersContainerSecondPage {
         display: none;
     }
-    
+
     .nameCard {
         font-size: 2vmin;
     }
+
     .livePlayersFirstPage {
         display: flex;
         width: 100%;
@@ -897,6 +931,7 @@ img {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .livePlayersContainerFirstPage {
         width: 80%;
         height: 67%;
@@ -904,6 +939,7 @@ img {
         justify-content: center;
         flex-direction: column;
     }
+
     .playerCard {
         display: flex;
         cursor: pointer;
@@ -915,7 +951,20 @@ img {
         overflow: hidden;
         border: 1px groove white;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
+
 /* Samsung Galaxy S5 */
 @media screen and (device-width: 360px) and (device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
     .playerCard {
@@ -929,6 +978,7 @@ img {
         overflow: hidden;
         border: 1px groove white;
     }
+
     .livePlayersFirstPage {
         display: flex;
         width: 100%;
@@ -937,6 +987,18 @@ img {
         overflow-y: scroll;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -947,6 +1009,7 @@ img {
         width: 92%;
         height: 40%;
     }
+
     .playerCard {
         display: flex;
         cursor: pointer;
@@ -958,11 +1021,13 @@ img {
         overflow: hidden;
         border: 1px groove white;
     }
+
     .text {
         font-family: twitch;
         color: white;
         font-size: 4vmax;
     }
+
     .livePlayersFirstPage {
         display: flex;
         width: 100%;
@@ -971,6 +1036,18 @@ img {
         overflow-y: scroll;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -1018,6 +1095,7 @@ img {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .livePlayersContainerFirstPage {
         width: 80%;
         height: 67%;
@@ -1025,6 +1103,7 @@ img {
         justify-content: center;
         flex-direction: column;
     }
+
     .playerCard {
         display: flex;
         cursor: pointer;
@@ -1035,15 +1114,28 @@ img {
         overflow: hidden;
         border: 1px groove white;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
 
 /* iPhone 6/7/8 Portrait */
 @media only screen and (device-height : 667px) and (device-width : 375px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
-  
+
     .livePlayersContainerFirstPage {
         width: 92%;
         height: 40%;
     }
+
     .playerCard {
         display: flex;
         cursor: pointer;
@@ -1055,11 +1147,13 @@ img {
         overflow: hidden;
         border: 1px groove white;
     }
+
     .text {
         font-family: twitch;
         color: white;
         font-size: 4vmax;
     }
+
     .livePlayersFirstPage {
         display: flex;
         width: 100%;
@@ -1068,6 +1162,18 @@ img {
         overflow-y: scroll;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -1088,10 +1194,12 @@ img {
     .iframeContainer {
         width: 100%;
     }
+
     img {
         width: 50px;
         height: 50px;
     }
+
     .playerCard {
         display: flex;
         cursor: pointer;
@@ -1103,7 +1211,19 @@ img {
         overflow: hidden;
         border: 1px groove white;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
     
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
+
 }
 
 /* iPhone 6+, 7+, 8+ Portrait ----------- */
@@ -1112,6 +1232,7 @@ img {
         width: 92%;
         height: 40%;
     }
+
     .playerCard {
         display: flex;
         cursor: pointer;
@@ -1123,11 +1244,13 @@ img {
         overflow: hidden;
         border: 1px groove white;
     }
+
     .text {
         font-family: twitch;
         color: white;
         font-size: 4vmax;
     }
+
     .livePlayersFirstPage {
         display: flex;
         width: 100%;
@@ -1136,6 +1259,18 @@ img {
         overflow-y: scroll;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -1156,6 +1291,7 @@ img {
     .iframeContainer {
         width: 100%;
     }
+
     .playerCard {
         display: flex;
         cursor: pointer;
@@ -1167,26 +1303,55 @@ img {
         overflow: hidden;
         border: 1px groove white;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
+
 /* iPhone X Portrait */
 @media only screen and (device-width: 375px) and (device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
     .livePlayersContainerFirstPage {
         width: 90%;
         height: 36%;
     }
+
     .livePlayersFirstPage {
         height: 100%;
     }
+
     .playerCard {
         height: 127px;
         width: 270px;
     }
+
     .text {
         font-family: twitch;
         color: white;
         font-size: 4vmax;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
+
 /* iPhone X Landscape */
 @media only screen and (device-width: 812px) and (device-height: 375px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
     .secondHeader {
@@ -1215,6 +1380,7 @@ img {
     .containerVid {
         height: 100%;
     }
+
     .playerCard {
         display: flex;
         cursor: pointer;
@@ -1225,9 +1391,22 @@ img {
         overflow: hidden;
         border: 1px groove white;
     }
+
     img {
         height: 60px;
         width: 60px;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -1266,6 +1445,18 @@ img {
         height: 319px;
         width: 345px;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
 
 
@@ -1274,6 +1465,7 @@ img {
     .iframeContainer {
         width: 57%;
     }
+
     .livePlayersContainerFirstPage {
         height: 90%;
         width: 100%;
@@ -1282,9 +1474,22 @@ img {
     .livePlayersFirstPage {
         height: 90%;
     }
+
     .playerCard {
         height: 239px;
         width: 445px;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -1298,9 +1503,22 @@ img {
     .livePlayersFirstPage {
         height: 76%;
     }
+
     .playerCard {
         height: 359px;
         width: 487px;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -1309,15 +1527,40 @@ img {
     .playerCard {
         height: 275px;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
 
 /* Pixel 2 Portrait*/
 @media only screen and (device-width: 411px) and (device-height: 731px) and (orientation : portrait) {
-    .livePlayersContainerFirstPage{
+    .livePlayersContainerFirstPage {
         width: 90%;
     }
+
     .livePlayersFirstPage {
         height: 58%;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -1338,6 +1581,18 @@ img {
     .iframeContainer {
         width: 100%;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
 
 /* Pixel 2 XL Portrait*/
@@ -1345,8 +1600,21 @@ img {
     .livePlayersFirstPage {
         height: 100%;
     }
+
     .playerCard {
         height: 214.5px;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -1367,6 +1635,18 @@ img {
     .iframeContainer {
         width: 88%;
     }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
+    }
 }
 
 /* Galaxy S5 Portrait */
@@ -1374,8 +1654,21 @@ img {
     .livePlayersContainerFirstPage {
         width: 90%;
     }
+
     .livePlayersFirstPage {
         height: 66%;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
@@ -1395,6 +1688,18 @@ img {
 
     .iframeContainer {
         width: 100%;
+    }
+
+    .playerCard>.nameCard {
+        top: 65%;
+        opacity: 0.80;
+        height: 35%;
+    }
+    
+    .playerCard2>.nameCard2 {
+        top: 0%;
+        opacity: 0.80;
+        height: 100%;
     }
 }
 
