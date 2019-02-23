@@ -6,6 +6,6 @@ Twitch Buddy is an application that shows in-game stats of popular Twitch Stream
 
 HTML, CSS, JavScript, jQuery
 
-### LiveSite
+### Live Demo
 
 https://collin-stewart.com/twitch_buddy/
